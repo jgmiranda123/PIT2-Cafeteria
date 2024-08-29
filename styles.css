@@ -1,0 +1,283 @@
+/* Definir o fundo azul da página */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #059cee;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do contêiner de login */
+.login-container {
+    background-color: #fff; /* Fundo branco */
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+/* Título do formulário */
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Grupo de inputs */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Rótulos dos campos */
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Campos de entrada de texto e senha */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Botão de login */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efeito hover no botão */
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Mensagem de erro */
+.error-msg {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Tornando a página responsiva */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+
+/* estilos de tela de vendas  */
+
+/* Estilos globais */
+/* Container de vendas */
+.venda-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Título da página */
+.venda-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilizando a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table thead {
+    background-color: #007BFF;
+    color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table td {
+    font-size: 16px;
+}
+
+/* Input de quantidade */
+input[type="number"] {
+    width: 90px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Seção de total */
+.total-section {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.total-section p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botão de finalizar venda */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    table th, table td {
+        padding: 8px;
+    }
+
+    input[type="number"] {
+        width: 50px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .venda-container {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 14px;
+    }
+
+    input[type="number"] {
+        width: 40px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+
+/* Página de cadastro de produtos */
+/* Estilos globais e para o container */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.product-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Ajustando o campo de preço */
+#preco {
+    font-size: 16px;
+    padding: 10px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .product-container {
+        padding: 15px;
+    }
+
+    form input[type="text"], form textarea {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+
